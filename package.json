@@ -1,0 +1,12 @@
+{
+  "name": "hello-catalog-js",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p build && jco componentize src/plugin.js --wit wit --world-name catalog-provider --disable http fetch-event -o build/plugin.wasm"
+  },
+  "devDependencies": {
+    "@bytecodealliance/jco": "1.39.0"
+  }
+}
