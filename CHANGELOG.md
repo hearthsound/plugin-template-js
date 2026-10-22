@@ -15,3 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub Actions workflow that builds the component, runs `hsplugin check`,
   `hsplugin test catalog` and `hsplugin pack`, and uploads the `.hsplugin`
   archive.
+
+### Changed
+
+- The install instructions no longer ask for a separate approval step; installing grants the permissions the manifest requests and enables the plugin.

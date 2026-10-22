@@ -86,12 +86,7 @@ Install the archive with the server's CLI:
 hearthsound plugins install dist/com.example.hello-catalog-0.1.0.hsplugin
 ```
 
-If the server reports that the plugin is pending approval, approve it before
-enabling it:
-
-```console
-hearthsound plugins approve com.example.hello-catalog
-```
+Installing grants the permissions the manifest requests and enables the plugin.
 
 `hearthsound plugins list` shows the installed plugins and their state. To
 remove the plugin again, run `hearthsound plugins remove com.example.hello-catalog`.
