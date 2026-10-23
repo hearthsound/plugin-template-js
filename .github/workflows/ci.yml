@@ -21,7 +21,7 @@ jobs:
       - name: Build the plugin
         run: npm run build
       - name: Install hsplugin
-        run: cargo install --locked --git https://github.com/hearthsound/plugin-sdk --tag v0.2.1 hearthsound-plugin-cli
+        run: cargo install --locked --git https://github.com/hearthsound/plugin-sdk --tag v0.3.0 hearthsound-plugin-cli
       - name: Check the plugin
         run: hsplugin check
       - name: Test the catalog conformance suite

@@ -4,8 +4,8 @@
 // matching album and artist. The only configuration is `greeting`, which
 // prefixes the track title.
 
-import { log } from 'hearthsound:plugin/host-log@0.2.0';
-import { serverConfig } from 'hearthsound:plugin/host-config@0.2.0';
+import { log } from 'hearthsound:plugin/host-log@0.3.0';
+import { serverConfig } from 'hearthsound:plugin/host-config@0.3.0';
 
 const DEFAULT_GREETING = 'Hello';
 

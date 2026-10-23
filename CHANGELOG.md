@@ -11,11 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - The hello-catalog plugin: a manifest, a JavaScript implementation of the
   `catalog-provider` world built with `@bytecodealliance/jco`, and the
-  vendored `hearthsound:plugin@0.2.0` WIT package.
+  vendored `hearthsound:plugin@0.3.0` WIT package.
 - GitHub Actions workflow that builds the component, runs `hsplugin check`,
   `hsplugin test catalog` and `hsplugin pack`, and uploads the `.hsplugin`
   archive.
 
 ### Changed
 
+- The plugin targets `hearthsound:plugin@0.3.0`; the vendored `wit/`
+  directory is refreshed from the `v0.3.0` tag of the SDK repository.
 - The install instructions no longer ask for a separate approval step; installing grants the permissions the manifest requests and enables the plugin.

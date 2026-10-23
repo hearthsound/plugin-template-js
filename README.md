@@ -26,7 +26,7 @@ Then update `name` in `package.json` and the plugin id in this README.
   installed with Cargo, so a Rust toolchain is needed once:
 
   ```console
-  cargo install --locked --git https://github.com/hearthsound/plugin-sdk --tag v0.2.1 hearthsound-plugin-cli
+  cargo install --locked --git https://github.com/hearthsound/plugin-sdk --tag v0.3.0 hearthsound-plugin-cli
   ```
 
 ## Build
@@ -101,7 +101,7 @@ section of `manifest.json` as a JSON Schema, so a server can show it as a form.
 
 `.github/workflows/ci.yml` runs on every push to `main` and on every pull
 request. It installs Node 24, runs `npm ci` and `npm run build`, installs
-`hsplugin` from the `v0.2.1` tag, runs `hsplugin check`,
+`hsplugin` from the `v0.3.0` tag, runs `hsplugin check`,
 `hsplugin test catalog` and `hsplugin pack --out-dir dist`, and uploads the
 `.hsplugin` archive as a workflow artifact. The workflow does not compare
 component hashes, for the reason given in the Build section.
@@ -113,7 +113,7 @@ component hashes, for the reason given in the Build section.
 | `manifest.json` | The plugin manifest the server reads. |
 | `package.json`, `package-lock.json` | The npm project and the pinned jco dependency. |
 | `src/plugin.js` | The plugin implementation. |
-| `wit/` | A copy of the `hearthsound:plugin@0.2.0` WIT package from the plugin SDK. Keep the files flat, exactly as they are. |
+| `wit/` | A copy of the `hearthsound:plugin@0.3.0` WIT package from the plugin SDK. Keep the files flat, exactly as they are. |
 | `.github/workflows/ci.yml` | Build, check, test, pack and upload. |
 
 ## License
